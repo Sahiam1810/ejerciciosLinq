@@ -16,3 +16,6 @@ var ejercicios = new LinqQueries(videojuegos, estudiantes, equipos);
 ejercicios.MultijugadoresNombres();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.EstudiantesAprobados();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.EquiposGolesFavor();
+  

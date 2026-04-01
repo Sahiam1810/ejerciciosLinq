@@ -53,4 +53,14 @@ public class LinqQueries
 
     // Ejercicio 3: Mostrar los equipos que tengan más de 10 goles a favor.
 
+    public void EquiposGolesFavor()
+    {
+        Console.WriteLine("Ejercicio 03 — Equipos con más de 10 goles a favor");
+
+        // Where filtra los equipos con más de 10 goles a favor
+        var resultado = _equipos.Where(e => e.GolesFavor > 10);
+
+        foreach (var e in resultado)
+            Console.WriteLine($"{e.Nombre} - GF: {e.GolesFavor}");
+    }
 }
