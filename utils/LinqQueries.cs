@@ -38,4 +38,19 @@ public class LinqQueries
             Console.WriteLine(nombre);
     }
 
+    // Ejercicio 2: Mostrar los estudiantes cuya nota sea mayor o igual a 3.0.
+
+    public void EstudiantesAprobados()
+    {
+        Console.WriteLine("Ejercicio 02 — Estudiantes aprobados");
+
+            // Where conserva solo los estudiantes cuya nota sea >= 3.0
+        var aprobados = _estudiantes.Where(e => e.Nota >= 3.0);
+
+        foreach (var e in aprobados)
+            Console.WriteLine($"{e.Nombre} - {e.Nota}");
+    }
+
+    // Ejercicio 3: Mostrar los equipos que tengan más de 10 goles a favor.
+
 }

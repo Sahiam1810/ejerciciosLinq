@@ -14,3 +14,5 @@ var ejercicios = new LinqQueries(videojuegos, estudiantes, equipos);
 // Llamar a cada ejercicio para mostrar su resultado
 
 ejercicios.MultijugadoresNombres();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.EstudiantesAprobados();
