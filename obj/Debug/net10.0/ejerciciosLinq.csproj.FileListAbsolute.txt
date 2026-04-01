@@ -1,0 +1,15 @@
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\bin\Debug\net10.0\ejerciciosLinq.exe
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\bin\Debug\net10.0\ejerciciosLinq.deps.json
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\bin\Debug\net10.0\ejerciciosLinq.runtimeconfig.json
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\bin\Debug\net10.0\ejerciciosLinq.dll
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\bin\Debug\net10.0\ejerciciosLinq.pdb
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.AssemblyInfoInputs.cache
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.AssemblyInfo.cs
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.csproj.CoreCompileInputs.cache
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.sourcelink.json
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.dll
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\refint\ejerciciosLinq.dll
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.pdb
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ejerciciosLinq.genruntimeconfig.cache
+C:\Users\LENOVO\Documents\Campus\C#\ejercicios_semanaSanta\ejerciciosLinq\obj\Debug\net10.0\ref\ejerciciosLinq.dll
