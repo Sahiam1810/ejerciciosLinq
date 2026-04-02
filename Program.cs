@@ -26,3 +26,5 @@ ejercicios.NombresVideojuegos();
 ejercicios.NombreYCurso();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.EquiposDiferenciaGol();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.RankingVideojuegos();

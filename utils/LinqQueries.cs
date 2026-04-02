@@ -109,4 +109,20 @@ public class LinqQueries
             Console.WriteLine($"{item.Nombre} - DG: {item.DiferenciaGol}");
 
     }
+
+
+// BLOQUE 3: Ordenar.
+
+    // Ejercicio 7: ordenar videojuegos de mayor a menor por puntos.
+
+    public void RankingVideojuegos()
+    {
+        Console.WriteLine("Ejercicio 07 — Ranking de videojuegos por puntos");
+
+        // OrderByDescending ordena de mayor a menor según Puntos
+        var ranking = _videojuegos.OrderByDescending(v => v.Puntos);
+
+        foreach (var v in ranking)
+            Console.WriteLine($"{v.Nombre} — {v.Puntos} pts");
+    }
 }
