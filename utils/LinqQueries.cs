@@ -215,4 +215,19 @@ public class LinqQueries
         }
     }
 
+    // Ejercicio 14: Agrupar videojuegos por género - Agrupar los videojuegos por género y mostrar cuantos hay en cada género.
+
+    public void AgruparVideojuegoPorGenero()
+    {
+        Console.WriteLine("Ejercicio 14 — Videojuegos agrupados por género");
+ 
+        // GroupBy agrupa por Genero — cada grupo contiene los juegos de ese género
+        var grupos = _videojuegos.GroupBy(v => v.Genero);
+ 
+        foreach (var grupo in grupos)
+        {
+            // grupo.Count() cuenta cuántos videojuegos hay en este grupo
+            Console.WriteLine($"{grupo.Key}: {grupo.Count()} juego(s)");
+        }
+    }
 }
