@@ -37,3 +37,5 @@ ejercicios.ContarVideojuegosTop();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.VerificarReprobados();
   Console.WriteLine("\n-----------------------------\n");
+ejercicios.MejorEquipo();
+  Console.WriteLine("\n-----------------------------\n");

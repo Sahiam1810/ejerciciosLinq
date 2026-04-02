@@ -178,4 +178,22 @@ public class LinqQueries
 
         Console.WriteLine(existeReprobado ? "Sí, hay estudiantes reprobados." : "No, todos los estudiantes aprobaron.");
     }
+
+
+    // Ejercicio 12: Mejor equipo, Obtener el primer equipo de la tabla de posiciones.
+
+    public void MejorEquipo()
+    {
+        Console.WriteLine("Ejercicio 12 — Mejor equipo");
+
+        // OrderByDescending ordena por puntos, ThenByDescending ordena por goles a favor en caso de empate
+        // FirstOrDefault toma el primer elemento o null si la lista está vacía
+        var mejor = _equipos
+            .OrderByDescending(e => e.Puntos)
+            .ThenByDescending(e => e.GolesFavor)
+            .FirstOrDefault();
+
+        Console.WriteLine($"{mejor?.Nombre} — {mejor?.Puntos} pts, GF: {mejor?.GolesFavor}");
+    }
+
 }
