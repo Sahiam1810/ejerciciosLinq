@@ -24,3 +24,5 @@ ejercicios.EquiposGolesFavor();
 ejercicios.NombresVideojuegos();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.NombreYCurso();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.EquiposDiferenciaGol();

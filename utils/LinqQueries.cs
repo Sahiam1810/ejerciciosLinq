@@ -91,4 +91,22 @@ public class LinqQueries
         foreach (var item in resumen)
             Console.WriteLine(item);
     }
+
+
+    // Ejercicio 6:  Diferencia de gol, Mostrar para cada equipo: `Nombre - DiferenciaDeGol`, La diferencia de gol se calcula así: ```GolesFavor - GolesContra```
+    public void EquiposDiferenciaGol()
+    {
+        Console.WriteLine("Ejercicio 06 — Diferencia de gol por equipo");
+
+        // Select calcula la diferencia de gol (GF - GC) en la misma consulta
+        var resultado = _equipos.Select(e => new
+        {
+            e.Nombre,
+            DiferenciaGol = e.GolesFavor - e.GolesContra
+        });
+
+        foreach (var item in resultado)
+            Console.WriteLine($"{item.Nombre} - DG: {item.DiferenciaGol}");
+
+    }
 }
