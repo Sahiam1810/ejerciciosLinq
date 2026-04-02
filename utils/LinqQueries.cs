@@ -230,4 +230,34 @@ public class LinqQueries
             Console.WriteLine($"{grupo.Key}: {grupo.Count()} juego(s)");
         }
     }
+
+    // ejercicio 15: Tomar los equipos que tengan diferencia de gol positiva, ordenarlos por puntos y proyectar solo:
+
+// - Nombre
+// - Puntos
+// - DiferenciaGol
+
+    public void RetoFinal()
+    {
+        Console.WriteLine("Ejercicio 15 — Reto final (Where + OrderBy + Select)");
+ 
+        // Encadenamos 3 operadores:
+        // Where - solo equipos con DG positiva (GF > GC)
+        // OrderByDescending - de mayor a menor puntos
+        // Select - proyectamos solo los campos que necesitamos
+
+        var resultado = _equipos
+            .Where(e => e.GolesFavor > e.GolesContra)
+            .OrderByDescending(e => e.Puntos)
+            .Select(e => new
+            {
+                e.Nombre,
+                e.Puntos,
+                DiferenciaGol = e.GolesFavor - e.GolesContra
+            });
+ 
+        foreach (var item in resultado)
+            Console.WriteLine($"{item.Nombre} — {item.Puntos} pts | DG: {item.DiferenciaGol}");
+    }
+
 }
