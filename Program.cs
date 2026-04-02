@@ -35,3 +35,5 @@ ejercicios.TablaDePosiciones();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.ContarVideojuegosTop();
   Console.WriteLine("\n-----------------------------\n");
+ejercicios.VerificarReprobados();
+  Console.WriteLine("\n-----------------------------\n");

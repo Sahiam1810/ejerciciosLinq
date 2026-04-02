@@ -168,4 +168,14 @@ public class LinqQueries
         Console.WriteLine($"Cantidad: {cantidad}");
     }
 
+    // Ejercicio 11: Verificar reprobados ¿Existe al menos un estudiante con nota menor a 3.0?
+    public void VerificarReprobados()
+    {
+        Console.WriteLine("Ejercicio 11 — Verificar reprobados");
+
+        // Any evalúa la condición en cada elemento y devuelve true si al menos uno la cumple
+        bool existeReprobado = _estudiantes.Any(e => e.Nota < 3.0);
+
+        Console.WriteLine(existeReprobado ? "Sí, hay estudiantes reprobados." : "No, todos los estudiantes aprobaron.");
+    }
 }
