@@ -139,4 +139,18 @@ public class LinqQueries
             Console.WriteLine($"{e.Nombre} — {e.Nota}");
     }
 
+    // ejercicio 9: Tabla de posiciones.
+    // Ordenar los equipos por puntos de mayor a menor. Si dos equipos empatan en puntos, ordenar por goles a favor de mayor a menor.
+
+    public void TablaDePosiciones()
+    {
+        Console.WriteLine("Ejercicio 09 — Tabla de posiciones");
+        // OrderByDescending ordena por puntos, ThenByDescending ordena por goles a favor en caso de empate
+        var tabla = _equipos
+            .OrderByDescending(e => e.Puntos)
+            .ThenByDescending(e => e.GolesFavor);
+
+        foreach (var e in tabla)
+            Console.WriteLine($"{e.Nombre} — {e.Puntos} pts, GF: {e.GolesFavor}");
+    }
 }

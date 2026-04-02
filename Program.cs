@@ -30,3 +30,6 @@ ejercicios.EquiposDiferenciaGol();
 ejercicios.RankingVideojuegos();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.RankingEstudiantes();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.TablaDePosiciones();
+  Console.WriteLine("\n-----------------------------\n");
