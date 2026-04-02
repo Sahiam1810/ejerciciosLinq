@@ -63,4 +63,19 @@ public class LinqQueries
         foreach (var e in resultado)
             Console.WriteLine($"{e.Nombre} - GF: {e.GolesFavor}");
     }
+
+
+// Bloque 2: Transformar.
+
+    // ejercicio 4: Crear una consulta que devuelva solo los nombres de todos los videojuegos.
+    public void NombresVideojuegos()
+    {
+        Console.WriteLine("Ejercicio 04 — Solo nombres de videojuegos");
+
+        // Select proyecta cada objeto Videojuego extrayendo únicamente su Nombre
+        var nombres = _videojuegos.Select(v => v.Nombre);
+
+        foreach (var nombre in nombres)
+            Console.WriteLine(nombre);
+    }
 }

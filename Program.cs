@@ -1,7 +1,9 @@
 ﻿using ejerciciosLinq.utils;
 using ejerciciosLinq.Data;
 
+Console.WriteLine("\n-----------------------------\n");
 Console.WriteLine("Ejercicios de LINQ con C#\n");
+Console.WriteLine("\n-----------------------------\n");
 
 // Obtener las listas de datos
 var videojuegos = DatosEjercicio.ObtenerVideojuegos();
@@ -18,4 +20,5 @@ ejercicios.MultijugadoresNombres();
 ejercicios.EstudiantesAprobados();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.EquiposGolesFavor();
-  
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.NombresVideojuegos();
