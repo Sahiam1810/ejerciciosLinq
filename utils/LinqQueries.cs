@@ -125,4 +125,18 @@ public class LinqQueries
         foreach (var v in ranking)
             Console.WriteLine($"{v.Nombre} — {v.Puntos} pts");
     }
+
+    // ejercicio 8: Ordenar los estudiantes de mayor a menor por nota.
+
+    public void RankingEstudiantes()
+    {
+        Console.WriteLine("Ejercicio 08 — Estudiantes ordenados por nota");
+
+        // OrderByDescending ordena de mayor a menor según Nota
+        var ranking = _estudiantes.OrderByDescending(e => e.Nota);
+
+        foreach (var e in ranking)
+            Console.WriteLine($"{e.Nombre} — {e.Nota}");
+    }
+
 }
