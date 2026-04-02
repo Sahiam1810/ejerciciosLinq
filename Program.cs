@@ -33,3 +33,5 @@ ejercicios.RankingEstudiantes();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.TablaDePosiciones();
   Console.WriteLine("\n-----------------------------\n");
+ejercicios.ContarVideojuegosTop();
+  Console.WriteLine("\n-----------------------------\n");

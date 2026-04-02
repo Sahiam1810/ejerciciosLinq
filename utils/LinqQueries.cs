@@ -153,4 +153,19 @@ public class LinqQueries
         foreach (var e in tabla)
             Console.WriteLine($"{e.Nombre} — {e.Puntos} pts, GF: {e.GolesFavor}");
     }
+
+// Bloque 4: Consultas rápidas
+
+    // Ejercicio 10: Contar cuántos videojuegos tienen más de 90 puntos.
+
+    public void ContarVideojuegosTop()
+    {
+        Console.WriteLine("Ejercicio 10 — Videojuegos con más de 90 puntos");
+
+        // Count evalúa la condición en cada elemento y suma los que la cumplen
+        int cantidad = _videojuegos.Count(v => v.Puntos > 90);
+
+        Console.WriteLine($"Cantidad: {cantidad}");
+    }
+
 }
