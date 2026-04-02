@@ -196,4 +196,23 @@ public class LinqQueries
         Console.WriteLine($"{mejor?.Nombre} — {mejor?.Puntos} pts, GF: {mejor?.GolesFavor}");
     }
 
+// Bloque 5: Bloque 5: Agrupar y combinar
+
+    // Ejercicio 13: Agrupar estudiantes por curso - Agrupar los estudiantes por curso y mostrar los nombres de cada grupo.
+    public void AgruparEstudiantesPorCurso()
+    {
+        Console.WriteLine("Ejercicio 13 — Estudiantes agrupados por curso");
+
+        // GroupBy agrupa usando Curso como clave
+        // Cada grupo tiene: Key = nombre del curso, elementos = estudiantes de ese curso
+        var grupos = _estudiantes.GroupBy(e => e.Curso);
+
+        foreach (var grupo in grupos)
+        {
+            Console.WriteLine($"Curso: {grupo.Key}");
+            foreach (var e in grupo)
+                Console.WriteLine($"  - {e.Nombre}");
+        }
+    }
+
 }

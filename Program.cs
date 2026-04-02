@@ -39,3 +39,5 @@ ejercicios.VerificarReprobados();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.MejorEquipo();
   Console.WriteLine("\n-----------------------------\n");
+ejercicios.AgruparEstudiantesPorCurso();
+  Console.WriteLine("\n-----------------------------\n");
