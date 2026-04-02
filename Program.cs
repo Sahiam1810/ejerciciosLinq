@@ -22,3 +22,5 @@ ejercicios.EstudiantesAprobados();
 ejercicios.EquiposGolesFavor();
   Console.WriteLine("\n-----------------------------\n");
 ejercicios.NombresVideojuegos();
+  Console.WriteLine("\n-----------------------------\n");
+ejercicios.NombreYCurso();

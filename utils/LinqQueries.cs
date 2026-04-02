@@ -78,4 +78,17 @@ public class LinqQueries
         foreach (var nombre in nombres)
             Console.WriteLine(nombre);
     }
+
+    // Ejercicio 5: Mostrar cada estudiante en formato: `Nombre - Curso`
+
+    public void NombreYCurso()
+    {
+        Console.WriteLine("Ejercicio 05 — Nombre y curso de cada estudiante");
+
+        // Select transforma cada Estudiante en un string interpolado
+        var resumen = _estudiantes.Select(e => $"{e.Nombre} - {e.Curso}");
+
+        foreach (var item in resumen)
+            Console.WriteLine(item);
+    }
 }
